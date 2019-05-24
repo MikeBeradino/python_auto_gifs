@@ -1,5 +1,10 @@
 # python_auto_gifs
 
+Requires:
+PIL
+
+install with sudo pip install Pillow
+
 !DONE  just here so I can finish the project.
 
 A collection of Python scripts that generate and then posts gifs to tumblr.

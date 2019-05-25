@@ -14,7 +14,7 @@ temp_image = Image.new("1", (width, height), (255))
 
 
 
-for x in range(file_count):
+for x in range(file_count-1):
 
 	
 	image_file = ("frames/"+str (count+1)+'.png')

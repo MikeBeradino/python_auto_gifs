@@ -12,7 +12,9 @@ color_r = True
 color_b = True
 color_g = True
 
-
+filelist = [ f for f in os.listdir("frames") if f.endswith(".png") ]
+for f in filelist:
+    os.remove(os.path.join("frames", f))
 
 
 def random_gradient(name):
@@ -92,10 +94,10 @@ count = 0
 
 #for file in os.listdir("frames"):
 
-for i in range(file_count-1):
+for i in range(file_count):
 	count = count +1
 	reverse_frame = (file_count*2) - count
 	image_file = Image.open("frames/"+str (count)+".png")
-	image_file.save("frames/"+str (reverse_frame) +".png", "PNG")
+	image_file.save("frames/"+str (reverse_frame-1) +".png", "PNG")
 	#print(file_count)
 	#print(count)

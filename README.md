@@ -4,8 +4,11 @@ A collection of Python scripts that generate and then posts gifs to tumblr.
 !DONE and kind of messy.
 
 Requires:
+
 PIL      ==> install with  pip install Pillow
+
 Pytumblr ==> install with  pip install pytumblr
+
 
 Works with python 2.7
 

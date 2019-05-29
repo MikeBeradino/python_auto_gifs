@@ -6,21 +6,15 @@ import random
 import time
 import sys, select
 from blend_images import (blend_ends,blend_mid)
-
-
 loop = False
-sleep = 1
-random_time = random.randint(30,60) * sleep
-
-#time.sleep(random_time)
-
-start = raw_input('start_bot y/n ?: ')
+sleep = 60 # in min
+master_counter = 1
+print "++++++++++++++++++++++++++++++++++++++++++"
+start = raw_input('Start auto gifs y/n ?: ')
+print "++++++++++++++++++++++++++++++++++++++++++"
 if start == "y":
 	loop = True 
-
-
 while loop == True:
-	
 	random_loop = random.randint(0,1)
 	if random_loop == 0:
 		two_way_loop()
@@ -28,28 +22,27 @@ while loop == True:
 		one_way_loop()
 		blend_mid()
 		blend_ends()
-	
-
-
-
 	frames2gifs()
 	post2()
 	
-	random_time = random.randint(3,6) * sleep
-	print("sleep",random_time)
-
-	#quit = raw_input('quit y/n ?: ')	
-	#if quit == "y":
-		#loop = False
-
-	print "Press enter to quit..You have ten seconds"
-	i, o, e = select.select( [sys.stdin], [], [], 10 )
+	random_time = random.randint(10 ,60) * sleep
+ 	print "++++++++++++++++++++++++++++++++++++++++++"
+ 	print "Made " + str (master_counter) + " .Gif"
+	print "++++++++++++++++++++++++++++++++++++++++++"
+	print "Press enter to quit..next post in "+ str (random_time/60) + " min"
+	print "++++++++++++++++++++++++++++++++++++++++++"
+	i, o, e = select.select( [sys.stdin], [], [], random_time )
 	if (i):
-  		print "goodbye"
+		print "++++++++++++++++++++++++++++++++++++++++++"
+  		print "Goodbye"
+  		print "++++++++++++++++++++++++++++++++++++++++++"
   		loop = False
 	else:
-  		print "making more art"
+		print "++++++++++++++++++++++++++++++++++++++++++"
+  		print "Making more art"
+  		print "++++++++++++++++++++++++++++++++++++++++++"
 
+  	master_counter = master_counter + 1
 
 
     	

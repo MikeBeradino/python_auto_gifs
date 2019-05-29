@@ -21,8 +21,11 @@ IN post2tumbler.py change the:
 	token_secret = 'xxxxxxxxxx'
 
 Get the tumblr tokens/keys here: https://www.tumblr.com/oauth/apps
+
 Get info on tumblr API here: https://www.tumblr.com/docs/en/api/v2
+
 Get info on Pytumblr:  https://github.com/tumblr/pytumblr
+
 
 
 ![fade](https://user-images.githubusercontent.com/12630009/58219823-e4ca8f00-7cd1-11e9-929f-d52993d01683.gif)

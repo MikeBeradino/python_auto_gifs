@@ -1,7 +1,6 @@
 # python_auto_gifs
 #  A collection of Python scripts that generate and then posts gifs to tumblr.
-##  !DONE and kind of messy.
-
+## Tumblr Gallery ==> https://gifandgif.tumblr.com/
 
 #####  Requires:
 ######  PIL      ==> install with  pip install Pillow
@@ -25,6 +24,8 @@ Get the tumblr tokens/keys here: https://www.tumblr.com/oauth/apps
 Get info on tumblr API here: https://www.tumblr.com/docs/en/api/v2
 
 Get info on Pytumblr:  https://github.com/tumblr/pytumblr
+
+
 
 
 

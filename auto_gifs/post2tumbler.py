@@ -12,4 +12,4 @@ def post2():
          	token_key,
          	token_secret
          	)
-	client.create_photo('gifandgif', state="published", tags=["gif"], data= "fade.gif")
+	client.create_photo('gifandgif', state="published", tags=["gif", "bot", "generative art", "art","digital art" ], data= "fade.gif")

@@ -24,6 +24,13 @@ def frames2gifs():
 		frames.append(imResize2)
 		count = count + 1
 	frames[0].save("fade.gif", save_all=True, append_images=frames[1:], duration=250, loop=0,optimize=True)
+
+
+
+
+
+
+
 	print "++++++++++++++++++++++++++++++++++++++++++"
 	print "Frames in .gif ==> " + str (file_count)
 	print "++++++++++++++++++++++++++++++++++++++++++"
